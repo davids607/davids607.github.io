@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <!-- Link to the externel CSS file-->
+    <link rel="stylesheet" href="styles.css">
+     <style>
+     
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function navigateToForm() {
+            document.getElementById("myForm").scrollIntoView();
+        }
+    </script>
+</head>
+<body>
+   <h1>Welcome to My Web Page</h1>
+    <p>This is a simple web project to test HTML, CSS, and JavaScript integration.</p>
+    
+     <!-- Example image-->
+     <img src="example.jpg" alt A description of the image contect">
+
+    <!-- Form section -->
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+     <button onclick="navigateToForm()">Go to Form</button>
+    <!-- Button that will take the user to the form when clicked -->
+     <script>
+        const button = document.getElementById ("myButton");
+        button.addEventListener("click", function() {
+            button.style.backgroundColor = 'blue';
+
+        });
+</script>
+<!-- Link to the external JavaScrip file-->
+
+     <button onclick ="showAlert()">ClickMe</button>
+    
+        <button onclick="showAlert()">clickMe</button>
+        
+        <!-- Link to the external script.js file -->
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
